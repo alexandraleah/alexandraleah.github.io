@@ -1,0 +1,14 @@
+.jumbotron {
+    background-color: #334E58; /* dark slate blue */
+    color: #E8E9F3;
+    padding: 100px 25px;
+
+}
+
+.bg-grey {
+    background-color: #f6f6f6;
+}
+
+.container-fluid {
+    padding: 60px 50px;
+}
