@@ -1,3 +1,2 @@
 # alexandraleah.github.io
-About me
-A portfolio site currently in progress. Uses bootstrap. 
+A portfolio site using bootstrap. Currently in a work in progress. 
