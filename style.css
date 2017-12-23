@@ -1,6 +1,8 @@
+
+
 .jumbotron {
     background-color: #334E58; /* dark slate blue */
-    color: #E8E9F3;
+    color: #E8E9F3; /* glitter */
     padding: 100px 25px;
 
 }
@@ -11,4 +13,11 @@
 
 .container-fluid {
     padding: 60px 50px;
+    color:#334E58;
+}
+
+/* Add an dark slate blue to all icons and set the font-size */
+.logo-small {
+    color: #334E58;
+    font-size: 50px;
 }
