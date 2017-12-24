@@ -1,3 +1,9 @@
+body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #454548;
+}
+
 .navbar {
     margin-bottom: 0;
     background-color: #334E58;
@@ -7,6 +13,8 @@
     line-height: 1.42857143 !important;
     letter-spacing: 4px;
     border-radius: 0;
+    font-family: Montserrat, sans-serif;
+
 }
 
 .navbar li a, .navbar .navbar-brand {
@@ -27,12 +35,23 @@
     background-color: #334E58; /* dark slate blue */
     color: #E8E9F3; /* glitter */
     padding: 100px 25px;
-
+    font-family: Montserrat, sans-serif;
 }
 
-#connect {
-  color:#E8E9F3;
-  background-color: #334E58;
+h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #2e2e30;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #2e2e30;
+    font-weight: 400;
+    margin-bottom: 30px;
 }
 
 .bg-grey {
@@ -40,11 +59,31 @@
 }
 
 .container-fluid {
+}
+
+.section {
     padding: 60px 50px;
 }
 
+#connect {
+  color:#E8E9F3;
+  background-color: #334E58;
+  padding: 20px;
+}
+
+#connect h2 {
+  color: #E8E9F3;
+}
+
+
+
 /* Color all icons and set the font-size */
 .logo-small {
+    color: #2e2e30;
+    font-size: 50px;
+}
+
+#connect .logo-small {
     color: #E8E9F3;
     font-size: 50px;
 }
