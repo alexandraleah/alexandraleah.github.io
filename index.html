@@ -47,27 +47,29 @@
   <h2>Portfolio</h2>
   <h4>A sample of my work</h4>
   <div class="row text-center">
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="paris.jpg" alt="Paris">
-        <p><strong>Paris</strong></p>
-        <p>Yes, we built Paris</p>
+    <div class="col-sm-6 info-container">
+      <div class="info bg-grey">
       </div>
     </div>
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="newyork.jpg" alt="New York">
-        <p><strong>New York</strong></p>
-        <p>We built New York</p>
-      </div>
+  <div class="col-sm-6 portfolio-item">
+      <img src="images/cayuga.png">
     </div>
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="sanfran.jpg" alt="San Francisco">
-        <p><strong>San Francisco</strong></p>
-        <p>Yes, San Fran is ours</p>
+      <div class="col-sm-6 info-container">
+        <div class="info bg-grey">
+        </div>
       </div>
-    </div>
+    <div class="col-sm-6 portfolio-item">
+          <img src="images/portal.png">
+      </div>
+      <div class="col-sm-6 info-container">
+        <div class="info bg-grey">
+        </div>
+      </div>
+      <div class="col-sm-6 portfolio-item">
+          <img src="images/cayuga.png">
+        </div>
+
+      </div>
 </div>
 </div>
 <div id="skills" class="container-fluid text-center section bg-grey">
@@ -146,7 +148,19 @@ $(document).ready(function(){
       });
     } // End if
   });
-})
+
+  $(".portfolio-item").click(function(){
+    $(this).prev().show(1000);
+    $( this ).wrap( "<a href='http://cayugadaylilies.com/' target='_blank'></a>" );
+  });
+
+  $(".info-container").click(function(){
+    $(this).hide(1000);
+    $(".portfolio-item" ).unwrap( );
+  });
+
+});
+
 </script>
   </body>
 </html>
