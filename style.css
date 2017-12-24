@@ -1,7 +1,7 @@
 body {
-    font: 400 15px Lato, sans-serif;
+    font: 400 15px Roboto, sans-serif;
     line-height: 1.8;
-    color: #454548;
+    color: #373733;
 }
 
 .navbar {
@@ -9,11 +9,11 @@ body {
     background-color: #334E58;
     z-index: 9999;
     border: 0;
-    font-size: 12px !important;
+    font-size: 15px !important;
     line-height: 1.42857143 !important;
     letter-spacing: 4px;
     border-radius: 0;
-    font-family: Montserrat, sans-serif;
+    font-family: 'Alegreya', serif;
 
 }
 
@@ -35,15 +35,17 @@ body {
     background-color: #334E58; /* dark slate blue */
     color: #E8E9F3; /* glitter */
     padding: 100px 25px;
-    font-family: Montserrat, sans-serif;
+    font-family: 'Alegreya', serif;
 }
+
 
 h2 {
     font-size: 24px;
     text-transform: uppercase;
-    color: #2e2e30;
+    color: #373733;
     font-weight: 600;
     margin-bottom: 30px;
+    font-family: 'Alegreya', serif;
 }
 
 h4 {
@@ -55,7 +57,7 @@ h4 {
 }
 
 .bg-grey {
-    background-color: #f6f6f6;
+    background-color: #f0f0ee;
 }
 
 .container-fluid {
@@ -79,7 +81,7 @@ h4 {
 
 /* Color all icons and set the font-size */
 .logo-small {
-    color: #2e2e30;
+    color: #373733;
     font-size: 50px;
 }
 
