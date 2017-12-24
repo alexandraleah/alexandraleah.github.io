@@ -11,7 +11,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </head>
   <!--theme adapted from w3schools' bootstrap theme company https://www.w3schools.com/bootstrap/trybs_theme_company_full.htm-->
-  <body>
+  <body data-spy="scroll" data-target=".navbar" data-offset="60">
     <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
       <div class="navbar-header">
@@ -31,7 +31,7 @@
       </div>
     </div>
   </nav>
-    <div class="jumbotron text-center">
+    <div class="jumbotron text-center" id="myPage">
       <h1>Alexandra Ash</h1>
       <p>Front-end web developer</p>
     </div>
@@ -122,5 +122,10 @@
 
     </div>
 </div>
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+</footer>
   </body>
 </html>
