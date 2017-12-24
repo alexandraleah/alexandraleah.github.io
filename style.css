@@ -61,8 +61,6 @@
     margin-bottom: 10px;
 }
 
-footer .glyphicon {
-    font-size: 20px;
-    margin-bottom: 20px;
-    color: #f4511e;
+.footer {
+    padding: 10px 10px;
 }
