@@ -62,21 +62,19 @@ h4 {
 
 .portfolio-item {
   background: #f0f0ee;
-  padding: 5px;
-  background-clip:content-box;
+  padding:2%;
 }
 
 .portfolio-item img {
   width: 100%;
   background-color: f0f0ee;
-  padding: 2%;
 }
 .info-container {
   display: none;
+
 }
 .info {
   width: 100%;
-  padding: 2%;
 }
 
 
