@@ -14,8 +14,10 @@ body {
     letter-spacing: 4px;
     border-radius: 0;
     font-family: 'Alegreya', serif;
+    text-transform: uppercase;
 
 }
+
 
 .navbar li a, .navbar .navbar-brand {
     color: #E8E9F3 !important;
@@ -94,6 +96,11 @@ h4 {
   color: #E8E9F3;
 }
 
+#connect a {
+  color: #E8E9F3;
+  text-decoration:none;
+}
+
 
 
 /* Color all icons and set the font-size */
@@ -122,6 +129,7 @@ h4 {
 .footer {
     padding: 10px 10px;
 }
+
 /*card flip adapted from https://davidwalsh.name/css-flip*/
 /* entire container, keeps perspective */
 .flip-container {
