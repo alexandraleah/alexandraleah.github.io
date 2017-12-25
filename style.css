@@ -53,7 +53,7 @@ h4 {
     line-height: 1.375em;
     color: #2e2e30;
     font-weight: 400;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .bg-grey {
@@ -76,7 +76,7 @@ h4 {
 }
 .info {
   width: 100%;
-  padding-top: 70.66%;
+  padding: 2%;
 }
 
 
