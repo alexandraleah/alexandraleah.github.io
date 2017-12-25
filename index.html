@@ -53,6 +53,27 @@
     <div id="work" class="container-fluid text-center bg-other">
       <h2>Work</h2>
       <div class="row text-center">
+<!--card flip adapted from https://davidwalsh.name/css-flip -->
+    <div class="col-sm-4">
+        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+        	<div class="flipper ">
+        		<div class="front thumbnail">
+                <img src="images/cayuga-flowers.jpg" alt="Cayuga">
+                <h4><strong>Cayuga Daylilies</h4>
+              </div>
+        		<div class="back">
+              <h4 class="text-center">CAYUGA DAYLILIES</h4>
+              <p>Designed and developed responsive, bold website for small business, Cayuga Daylilies<p>
+                <ul>
+                  <li>Fully responsive one-page design</li>
+                  <li>Collapsable menu</li>
+                  <li>Lightbox gallery</li>
+                </ul>
+                <p class="text-center"><a href="http://cayugadaylilies.com/" target="_blank">View website</p>
+        		</div>
+        	</div>
+        </div>
+      </div>
         <div class="col-sm-4">
           <div class="thumbnail">
             <img src="images/cayuga-flowers.jpg" alt="Cayuga">
@@ -188,15 +209,6 @@ $(document).ready(function(){
     } // End if
   });
 
-  $(".portfolio-item").click(function(){
-    $(this).prev().show(1000);
-    $( this ).wrap( "<a href='http://cayugadaylilies.com/' target='_blank'></a>" );
-  });
-
-  $(".info-container").click(function(){
-    $(this).hide(1000);
-    $(".portfolio-item" ).unwrap( );
-  });
 
 });
 
