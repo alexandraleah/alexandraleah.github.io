@@ -53,10 +53,10 @@ h4 {
     line-height: 1.375em;
     color: #2e2e30;
     font-weight: 400;
-    margin-bottom: 10px;
+    text-transform: uppercase;
 }
 
-.bg-grey {
+.bg-other {
     background-color: #f0f0ee;
 }
 
