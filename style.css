@@ -122,8 +122,10 @@ h4 {
 
 .thumbnail img {
     width: 100%;
+    max-width: 300px;
     height: 100%;
     margin-bottom: 10px;
+
 }
 
 .footer {
@@ -148,16 +150,13 @@ h4 {
 	transition: 0.6s;
 	transform-style: preserve-3d;
 	position: relative;
+  min-height: 400px;
 }
 
 /* hide back of pane during swap */
 .back {
 	backface-visibility: hidden;
   position: relative;
-  padding-left:20px;
-  padding-right:10px;
-  background-color: #ffffff;
-
 }
 
 
@@ -169,8 +168,9 @@ h4 {
 	transform: rotateY(0deg);
   background-color:#ffffff;
   position: absolute;
-	top: 0;
-	left: 0;
+  top: 20px;
+  left: 20px;
+  padding:20px;
 }
 
 /* back, initially hidden pane */
