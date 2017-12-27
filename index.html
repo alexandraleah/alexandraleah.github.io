@@ -4,115 +4,132 @@
     <title>Alexandra Ash</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--Include Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!-- Link to my stylesheet -->
     <link rel="stylesheet" href="style.css">
+<!--Include to font awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--Include Google fonts -->
     <link href='https://fonts.googleapis.com/css?family=Alegreya' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+<!-- Include JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!--Include bootstrap javascript file-->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </head>
-  <!--theme adapted from w3schools' bootstrap theme company https://www.w3schools.com/bootstrap/trybs_theme_company_full.htm-->
+<!--theme adapted from w3schools' Bootstrap company theme https://www.w3schools.com/bootstrap/trybs_theme_company_full.htm-->
+<!--Scrollspy allows the nav bar to reflect where in the page the user has scrolled-->
   <body data-spy="scroll" data-target=".navbar" data-offset="60">
+<!--Nav bar -->
     <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <i class="icon-bar"></i>
-          <i class="icon-bar"></i>
-          <i class="icon-bar"></i>
-        </button>
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <i class="icon-bar"></i>
+            <i class="icon-bar"></i>
+            <i class="icon-bar"></i>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#connect">CONNECT</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#about">ABOUT</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#skills">SKILLS</a></li>
-          <li><a href="#connect">CONNECT</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+    </nav>
+<!--Jumbotron-->
     <div class="jumbotron text-center" id="myPage">
       <h1>Alexandra Ash</h1>
       <p>front-end web developer</p>
     </div>
+<!-- about section -->
     <div id="about" class="container-fluid section">
       <h2 class="text-center">About Alexandra</h2>
-          <div class="row">
-            <div class="col-sm-2">
-                <img src="images/alex.jpeg" class="img-circle"></img>
-              </div>
-            <div class="col-sm-10">
-      <p>My career in the environmental sector has taught me that well designed software and web apps translate to mission accomplished. From mobile apps that allow volunteers to enter data or report unusual conditions to web apps that notify the public of environmental hazards in real time, to cloud based databases to track donors, the right technology makes all the difference.</p>
-      <p> My interest in web technologies led me to pursue a certificate in web development. This training combined with experience as Director of Communications at a local non-profit has provided me with a unique perspective and real world experience. In every project I strive to build user-friendly, interactive applications with powerful impact. </p>
-      <p>I graduated with honors from the University of Chicago in 2008 with a BA in Public Policy.</p>
+<!--first row-->
+      <div class="row">
+<!--Small left column-->
+        <div class="col-md-3">
+          <img src="images/alex.jpeg" class="img-circle center-block img-responsive"></img>
+        </div>
+<!--main content-->
+        <div class="col-md-9">
+          <p>My career in the environmental sector has taught me that well designed software and web apps translate to mission accomplished. From mobile apps that allow volunteers to enter data or report unusual conditions to web apps that notify the public of environmental hazards in real time, to cloud based databases to track donors, the right technology makes all the difference.</p>
+          <p> My interest in web technologies led me to pursue a certificate in web development. This training combined with experience as Director of Communications at a local non-profit has provided me with a unique perspective and real world experience. In every project I strive to build user-friendly, interactive applications with powerful impact. </p>
+          <p>I graduated with honors from the University of Chicago in 2008 with a BA in Public Policy.</p>
+        </div>
+      </div>
     </div>
-
-    </div>
-    </div>
+<!--portfolio section-->
     <div id="portfolio" class="container-fluid bg-other section">
       <h2 class="text-center">Portfolio</h2>
       <div class="row">
 <!--card flip adapted from https://davidwalsh.name/css-flip -->
-    <div class="col-sm-4">
-        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-        	<div class="flipper ">
-        		<div class="front thumbnail">
-                <img src="images/cayuga-flowers.jpg" alt="Cayuga">
-                <h4 class="text-center">Cayuga Daylilies</h4>
-              </div>
-        		<div class="back">
-              <h4 class="text-center">CAYUGA DAYLILIES</h4>
-              <p>Responsive, bold website for small business, Cayuga Daylilies. I designed and developed the site.<p>
-                <ul>
-                  <li>Fully responsive one-page design</li>
-                  <li>Collapsable menu</li>
-                  <li>Lightbox gallery</li>
-                </ul>
-                <p class="text-center"><a href="http://cayugadaylilies.com/" target="_blank">view website</a>&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/alexandraleah/cayuga-daylilies" target="_blank">view code</a></p>
-        		</div>
-        	</div>
-        </div>
-      </div>
-
-        <div class="col-sm-4">
+        <div class="col-md-6 col-lg-4">
           <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-            <div class="flipper ">
-              <div class="front thumbnail">
-                  <img src="images/map.png" alt="Data Portal">
-                  <h4 class="text-center">Water quality data portal</h4>
-                </div>
+        	   <div class="flipper">
+<!-- Front of card-->
+        		     <div class="front">
+                   <img src="images/cayuga-flowers.jpg" alt="Cayuga" class="img-responsive">
+                   <h4 class="text-center">Cayuga Daylilies</h4>
+                 </div>
+<!--back of card-->
+            		 <div class="back">
+                   <h4 class="text-center">CAYUGA DAYLILIES</h4>
+                   <p>Responsive, bold website for small business, Cayuga Daylilies. I designed and developed the site.<p>
+                   <ul>
+                     <li>Fully responsive one-page design</li>
+                     <li>Collapsable menu</li>
+                     <li>Lightbox gallery</li>
+                   </ul>
+                        <p><a href="http://cayugadaylilies.com/" target="_blank">View Website
+                        </a>&nbsp;&nbsp;<a href="https://github.com/alexandraleah/cayuga-daylilies" target="_blank">View Code</a></p>
+                 </div>
+            </div>
+          </div>
+        </div>
+<!--second card -->
+        <div class="col-md-6 col-lg-4">
+          <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper center-block">
+              <div class="front">
+                <img src="images/map.png" alt="Data Portal" class="img-responsive">
+                <h4 class="text-center">Water quality data portal</h4>
+              </div>
               <div class="back">
                 <h4 class="text-center">Water quality data portal</h4>
                 <p>Web application to enable users to search water quality data collected by Charles River Watershed Association and display custom maps and charts. I designed and developed the site.</p>
-                  <ul>
-                    <li>Frontend: javascript, html, css</li>
-                    <li>Backend: php and MySQL database</li>
-                    <li>Maps: Google maps API</li>
-                    <li>Charts: Highcharts</li>
-                  </ul>
-                  <p class="text-center"><a href="http://alexash.x10host.com/dataportal/" target="_blank">view website</a>&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/alexandraleah/dataportal" target="_blank">view code</a></p>
+                <ul>
+                  <li>Frontend: javascript, html, css</li>
+                  <li>Backend: php and MySQL database</li>
+                  <li>Maps: Google maps API</li>
+                  <li>Charts: Highcharts</li>
+                </ul>
+                <p class="text-center"><a href="http://alexash.x10host.com/dataportal/" target="_blank">view website</a>&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/alexandraleah/dataportal" target="_blank">view code</a></p>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-sm-4">
+<!--third card -->
+        <div class="col-md-6 col-lg-4">
           <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-            <div class="flipper ">
-              <div class="front thumbnail">
-                  <img src="images/flagging.jpg" alt="Public Notification">
+            <div class="flipper">
+              <div class="front">
+                  <img src="images/flagging.jpg" alt="Public Notification" class="img-responsive">
                   <h4 class="text-center">Water quality Notification</h4>
-                </div>
+              </div>
               <div class="back">
                 <h4 class="text-center">Water Quality Notification</h4>
                 <p>Collaborated on a php-based web application to calculate and display when the river is safe for boating.
  I worked with the consultant who developed the web application to integrate it into Charles River Watershed Associations website. I now maintain and update the code. The website is currently off-line for the winter.</p>
-                  <ul>
-                    <li>Frontend: html, css</li>
-                    <li>Backend: php and MySQL database</li>
-                  </ul>
-                  <p class="text-center"><a href="mailto:alexandraleah.ash@gmail.com" target="_top">Contact</a> me for more information.</p>
+                <ul>
+                  <li>Frontend: html, css</li>
+                  <li>Backend: php and MySQL database</li>
+                </ul>
+                <p class="text-center"><a href="mailto:alexandraleah.ash@gmail.com" target="_top">Contact</a> me for more information.</p>
               </div>
             </div>
           </div>
