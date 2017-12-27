@@ -129,6 +129,11 @@ h4 {
 	}
 
 .flip-container, .front, .back {
+	width: 320px;
+	height: 480px;
+}
+
+.flip-container, .front, .back {
 }
 
 /* flip speed goes here */
@@ -136,7 +141,7 @@ h4 {
 	transition: 0.6s;
 	transform-style: preserve-3d;
 	position: relative;
-  min-height: 400px;
+  margin: 20px auto;
 }
 
 /* hide back of pane during swap */
