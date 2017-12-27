@@ -113,7 +113,7 @@ img {
 }
 
 .flip-container, .front, .back {
-	width: 200px;
+	width: 300px;
 	height: 400px;
   margin: 20px auto;
 }
