@@ -136,6 +136,7 @@ img {
 	left: 0;
   background-color: #ffffff;
   padding:20px;
+  line-height: 1.2;
 }
 
 /* front pane, placed above back */
@@ -148,4 +149,5 @@ img {
 /* back, initially hidden pane */
 .back {
 	transform: rotateY(180deg);
+
 }
