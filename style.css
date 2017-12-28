@@ -1,3 +1,8 @@
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
 body {
     font: 400 15px Roboto, sans-serif;
     line-height: 1.8;
@@ -56,6 +61,7 @@ h4 {
     color: #2e2e30;
     font-weight: 400;
     text-transform: uppercase;
+    margin-bottom: 30px;
 }
 
 .bg-other {
