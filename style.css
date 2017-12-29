@@ -121,6 +121,7 @@ img {
 .flip-container, .front, .back {
 	height: 400px;
   margin: 20px auto;
+  max-width:545px;
 }
 
 .flip-container, .front, .back {
@@ -155,4 +156,9 @@ img {
 .back {
 	transform: rotateY(180deg);
 
+}
+
+.flipper img {
+  max-width:525px;
+  width:100%;
 }
