@@ -124,7 +124,7 @@ img {
 }
 
 .flip-container, .front, .back {
-	height: 400px;
+	height: 430px;
   margin: 20px auto;
   max-width:545px;
 }
