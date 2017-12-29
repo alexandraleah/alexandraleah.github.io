@@ -180,6 +180,10 @@
 
     </div>
   </div>
+  <div class="box transform">
+</div>
+
+<input type="button" id="button" value="Click Me"></input>
 </footer>
 <script>
 $(document).ready(function(){
@@ -207,6 +211,9 @@ $(document).ready(function(){
     } // End if
   });
 
+  $(".flipper").click(function() {
+    $(this).toggleClass('flip');
+  });
 
 });
 

@@ -113,9 +113,14 @@ img {
 	perspective: 1000px;
 
 }
-/* flip the pane when hovered */
+/* flip the pane when hovered
 .flip-container:hover .flipper, .flip-container.hover .flipper {
 		transform: rotateY(180deg);
+}
+*/
+
+.flip {
+  transform: rotateY(180deg);
 }
 
 .flip-container, .front, .back {
@@ -142,7 +147,7 @@ img {
 	left: 0;
   background-color: #ffffff;
   padding:10px;
-  line-height: 1.2;
+  line-height: 1.8;
 }
 
 /* front pane, placed above back */
@@ -161,4 +166,10 @@ img {
 .flipper img {
   max-width:525px;
   width:100%;
+}
+
+.box {
+  background-color: #218D9B;
+  height: 100px;
+  width: 100px;
 }
