@@ -69,12 +69,16 @@
       <div class="row">
 <!--card flip adapted from https://davidwalsh.name/css-flip -->
         <div class="col-sm-12 col-md-6 col-lg-4">
-          <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+          <div class="flip-container">
         	   <div class="flipper">
 <!-- Front of card-->
         		     <div class="front">
-                   <img src="images/cayuga-flowers.jpg" alt="Cayuga" class="img-responsive">
+                  <a href="http://cayugadaylilies.com/" target="blank"> <img src="images/cayuga-flowers.jpg" alt="Cayuga" class="img-responsive"></a>
                    <h4 class="text-center">Cayuga Daylilies</h4>
+                   <p class="text-left">
+                     <a href="http://cayugadaylilies.com/" target="_blank" data-toggle="tooltip" title="Website"><i class="fa fa-globe pointer" style="font-size:30px"></i></a>&emsp;&emsp;
+                      <a href="https://github.com/alexandraleah/cayuga-daylilies" target="_blank" data-toggle="tooltip" title="Code"><i class="fa fa-github pointer" style="font-size:30px"></i></a></p>
+                     <p class="text-right"><a data-toggle="tooltip" title="More"><i class="fa fa-long-arrow-right pointer" style="font-size:30px"></i></a></p>
                  </div>
 <!--back of card-->
             		 <div class="back">
@@ -85,15 +89,15 @@
                      <li>Collapsable menu</li>
                      <li>Lightbox gallery</li>
                    </ul>
-                        <p><a href="http://cayugadaylilies.com/" target="_blank">View Website
-                        </a>&nbsp;&nbsp;<a href="https://github.com/alexandraleah/cayuga-daylilies" target="_blank">View Code</a></p>
+                        <p class="text-left"><a data-toggle="tooltip" title="Back">
+      <i class="fa fa-long-arrow-left pointer" style="font-size:30px"></i></a></p>
                  </div>
             </div>
           </div>
         </div>
 <!--second card -->
         <div class="col-sm-12 col-md-6 col-lg-4">
-          <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+          <div class="flip-container">
             <div class="flipper center-block">
               <div class="front">
                 <img src="images/map.png" alt="Data Portal" class="img-responsive">
@@ -115,7 +119,7 @@
         </div>
 <!--third card -->
         <div class="col-sm-12 col-md-6 col-lg-4">
-          <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+          <div class="flip-container">
             <div class="flipper">
               <div class="front">
                   <img src="images/flagging.jpg" alt="Public Notification" class="img-responsive">
@@ -140,27 +144,27 @@
   <h2>SKILLS</h2>
   <div class="row">
     <div class="col-xs-12 col-sm-4 col-md-2">
-      <i class="logo-small fa fa-file-code-o" style="font-size:50px"></i>
+      <i class="fa fa-file-code-o" style="font-size:50px"></i>
       <h4>HTML AND CSS</h4>
     </div>
     <div class="col-xs-12 col-sm-4 col-md-2">
-      <i class="logo-small fa fa-code" style="font-size:50px"></i>
+      <i class="fa fa-code" style="font-size:50px"></i>
       <h4>JAVASCRIPT</h4>
     </div>
     <div class="col-xs-12 col-sm-4 col-md-2">
-    <i class="logo-small fa fa-database" style="font-size:50px"></i>
+    <i class="fa fa-database" style="font-size:50px"></i>
       <h4>PHP AND SQL</h4>
     </div>
     <div class="col-xs-12 col-sm-4 col-md-2">
-      <i class="logo-small fa fa-cloud" style="font-size:50px"></i>
+      <i class="fa fa-cloud" style="font-size:50px"></i>
       <h4>SALESFORCE</h4>
     </div>
     <div class="col-xs-12 col-sm-4 col-md-2">
-      <i class="logo-small fa fa-briefcase" style="font-size:50px"></i>
+      <i class="fa fa-briefcase" style="font-size:50px"></i>
       <h4>MARKETING</h4>
     </div>
     <div class="col-xs-12 col-sm-4 col-md-2">
-      <i class=" logo-small fa fa-file-image-o" style="font-size:50px"></i>
+      <i class="fa fa-file-image-o" style="font-size:50px"></i>
       <h4>GRAPHIC DESIGN</h4>
     </div>
   </div>
@@ -169,21 +173,17 @@
   <h2>CONNECT</h2>
   <div class="row">
   <div class="col-sm-4">
-    <a href="mailto:alexandraleah.ash@gmail.com" target="_top"><i class="logo-small fa fa-envelope" style="font-size:50px"></i></a>
+    <a href="mailto:alexandraleah.ash@gmail.com" target="_top"><i class="fa fa-envelope" style="font-size:50px"></i></a>
     <p>alexandraleah.ash@gmail.com</p>
   </div>
   <div class="col-sm-4">
-    <a href="https://github.com/alexandraleah/" target="_blank"><i class="logo-small fa fa-github" style="font-size:50px"></i><p>alexandraleah</p></a>
+    <a href="https://github.com/alexandraleah/" target="_blank"><i class="fa fa-github" style="font-size:50px"></i><p>alexandraleah</p></a>
   </div>
     <div class="col-sm-4">
-      <a href="https://www.linkedin.com/in/alexandra-ash-57942323/" target="_blank"><i class="logo-small fa fa-linkedin-square" style="font-size:50px"></i><p>LinkedIn</p></a>
+      <a href="https://www.linkedin.com/in/alexandra-ash-57942323/" target="_blank"><i class="fa fa-linkedin-square" style="font-size:50px"></i><p>LinkedIn</p></a>
 
     </div>
   </div>
-  <div class="box transform">
-</div>
-
-<input type="button" id="button" value="Click Me"></input>
 </footer>
 <script>
 $(document).ready(function(){
@@ -210,6 +210,9 @@ $(document).ready(function(){
       });
     } // End if
   });
+
+  $('[data-toggle="tooltip"]').tooltip();
+
 
   $(".flipper").click(function() {
     $(this).toggleClass('flip');

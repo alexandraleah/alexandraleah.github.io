@@ -61,7 +61,11 @@ h4 {
     color: #2e2e30;
     font-weight: 400;
     text-transform: uppercase;
-    margin-bottom: 30px;
+
+}
+
+.connect h4 {
+  margin-bottom: 30px;
 }
 
 .bg-other {
@@ -92,19 +96,24 @@ img {
   text-decoration:none;
 }
 
-/* Color all icons and set the font-size */
-.logo-small {
+/* Color icons*/
+i {
     color: #373733;
-    font-size: 50px;
 }
 
-#connect .logo-small {
+.tooltip > .tooltip-inner {
+     background-color: #373733;
+     color: #E8E9F3;
+ }
+
+.pointer {cursor: pointer;}
+
+#connect i {
     color: #E8E9F3;
-    font-size: 50px;
 }
 
 .footer {
-    padding: 10px 10px;
+    padding: 10px 10px
 }
 
 /*card flip adapted from https://davidwalsh.name/css-flip*/
@@ -166,10 +175,4 @@ img {
 .flipper img {
   max-width:525px;
   width:100%;
-}
-
-.box {
-  background-color: #218D9B;
-  height: 100px;
-  width: 100px;
 }
