@@ -157,7 +157,20 @@ i {
   background-color: #ffffff;
   padding:10px;
   line-height: 1.8;
+  overflow: auto;
 }
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+
+  > .col,
+  > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
 
 /* front pane, placed above back */
 .front {
