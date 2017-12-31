@@ -160,6 +160,10 @@ i {
   overflow: auto;
 }
 
+.back a {
+  #373733;
+}
+
 .no-gutters {
   margin-right: 0;
   margin-left: 0;
