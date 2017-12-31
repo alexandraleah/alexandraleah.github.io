@@ -135,7 +135,7 @@ i {
 .flip-container, .front, .back {
 	height: 430px;
   margin: 20px auto;
-  max-width:545px;
+  max-width:480px;
 }
 
 .flip-container, .front, .back {
@@ -186,6 +186,6 @@ i {
 }
 
 .flipper img {
-  max-width:525px;
+  max-width:460px;
   width:100%;
 }
