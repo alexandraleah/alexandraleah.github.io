@@ -160,8 +160,9 @@ i {
   overflow: auto;
 }
 
-.back a {
-  #373733;
+.front a{
+  color:#373733;
+  text-decoration:none;
 }
 
 .no-gutters {
