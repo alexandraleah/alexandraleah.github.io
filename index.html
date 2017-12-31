@@ -83,7 +83,7 @@
                       <a href="https://github.com/alexandraleah/cayuga-daylilies" target="_blank" data-toggle="tooltip" title="Code"><i class="fa fa-github pointer" style="font-size:30px"></i></a></p>
                     </div>
                     <div class="col-xs-2 col-xs-offset-2">
-                     <a data-toggle="tooltip" title="More"><i class="fa fa-long-arrow-right pointer" style="font-size:30px"></i></a>
+                     <a data-toggle="tooltip" title="More"><i class="fa fa-long-arrow-right pointer arrow" style="font-size:30px"></i></a>
                    </div>
                  </div>
                </div>
@@ -99,7 +99,7 @@
                    <div class="row no-gutters">
                      <div class="col-xs-2">
                         <a data-toggle="tooltip" title="Back">
-      <i class="fa fa-long-arrow-left pointer" style="font-size:30px"></i></a>
+      <i class="fa fa-long-arrow-left pointer arrow" style="font-size:30px"></i></a>
     </div></div>
                  </div>
             </div>
@@ -120,7 +120,7 @@
                    <a href="https://github.com/alexandraleah/dataportal" target="_blank" data-toggle="tooltip" title="Code"><i class="fa fa-github pointer" style="font-size:30px"></i></a>
                   </div>
                   <div class="col-xs-2 col-xs-offset-2">
-                    <a data-toggle="tooltip" title="More"><i class="fa fa-long-arrow-right pointer" style="font-size:30px"></i></a>
+                    <a data-toggle="tooltip" title="More"><i class="fa fa-long-arrow-right pointer arrow" style="font-size:30px"></i></a>
                   </div>
                 </div>
                 </div>
@@ -135,7 +135,7 @@
                 <div class="row no-gutters">
                   <div class="col-xs-2">
                   <a data-toggle="tooltip" title="Back">
-  <i class="fa fa-long-arrow-left pointer" style="font-size:30px"></i></a>
+  <i class="fa fa-long-arrow-left pointer arrow" style="font-size:30px"></i></a>
               </div></div>
             </div>
           </div>
@@ -150,7 +150,7 @@
                   <div class="row no-gutters">
                     <div class="col-xs-2 col-xs-offset-10">
                     <a data-toggle="tooltip" title="More">
-    <i class="fa fa-long-arrow-right pointer" style="font-size:30px"></i></a>
+    <i class="fa fa-long-arrow-right pointer arrow" style="font-size:30px"></i></a>
                 </div></div>
               </div>
               <div class="back">
@@ -164,7 +164,7 @@
                 <div class="row no-gutters">
                   <div class="col-xs-2">
                   <a data-toggle="tooltip" title="Back">
-  <i class="fa fa-long-arrow-left pointer" style="font-size:30px"></i></a>
+  <i class="fa fa-long-arrow-left pointer arrow" style="font-size:30px"></i></a>
               </div></div>
               </div>
             </div>
@@ -246,9 +246,10 @@ $(document).ready(function(){
   $('[data-toggle="tooltip"]').tooltip();
 
 
-  $(".flipper").click(function() {
-    $(this).toggleClass('flip');
+  $(".arrow").click(function() {
+    $(this).closest(".flipper").toggleClass('flip');
   });
+
 
 });
 
