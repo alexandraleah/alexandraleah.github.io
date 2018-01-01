@@ -135,7 +135,9 @@ i {
 .flip-container, .front, .back {
 	height: 430px;
   margin: 20px auto;
+  width: 100%;
   max-width:480px;
+
 }
 
 .flip-container, .front, .back {
@@ -168,6 +170,8 @@ i {
 .no-gutters {
   margin-right: 0;
   margin-left: 0;
+  padding-right: 0;
+  padding-left: 0;
 
   > .col,
   > [class*="col-"] {
@@ -176,6 +180,9 @@ i {
   }
 }
 
+.border {
+  border: 1px solid black;
+}
 
 /* front pane, placed above back */
 .front {
@@ -190,7 +197,10 @@ i {
 
 }
 
-.flipper img {
-  max-width:460px;
-  width:100%;
+#cayuga {
+     background: url(images/cayuga-flowers.jpg);
+     width: 100%;
+     background-size: cover;
+     height: 315px;
+     padding: 0px;
 }
