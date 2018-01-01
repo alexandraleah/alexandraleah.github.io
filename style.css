@@ -1,14 +1,41 @@
-.col-centered{
-    float: none;
-    margin: 0 auto;
-}
+/*
+Colors:
+  #373733 (Jet)
+  #334E58 (Dark Slate Blue)
+  #E8E9F3 (Glitter)
+  #f0f0ee (Isabelline)
+Text
+  Body: Roboto, Jet, size 15px
+  Navbar and heading: Alegreya, uppercase
 
+Fonts color and line height for body*/
 body {
     font: 400 15px Roboto, sans-serif;
     line-height: 1.8;
     color: #373733;
 }
 
+/*class to center a div*/
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+/*removes gutters from columns and rows*/
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+  padding-right: 0;
+  padding-left: 0;
+
+  > .col,
+  > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+/*styles for navbar*/
 .navbar {
     margin-bottom: 0;
     background-color: #334E58;
@@ -20,7 +47,6 @@ body {
     border-radius: 0;
     font-family: 'Alegreya', serif;
     text-transform: uppercase;
-
 }
 
 
@@ -28,6 +54,7 @@ body {
     color: #E8E9F3 !important;
 }
 
+/*navbar button changes color on hover*/
 .navbar-nav li a:hover, .navbar-nav li.active a {
     color: #E8E9F3 !important;
     background-color: #102C37 !important;
@@ -38,6 +65,7 @@ body {
     color: #E8E9F3 !important;
 }
 
+/*styles for jumbotron*/
 .jumbotron {
     background-color: #334E58; /* dark slate blue */
     color: #E8E9F3; /* glitter */
@@ -45,7 +73,7 @@ body {
     font-family: 'Alegreya', serif;
 }
 
-
+/*Styles for section headings*/
 h2 {
     font-size: 24px;
     text-transform: uppercase;
@@ -55,6 +83,7 @@ h2 {
     font-family: 'Alegreya', serif;
 }
 
+/*Styles for section subheading*/
 h4 {
     font-size: 19px;
     line-height: 1.375em;
@@ -64,83 +93,53 @@ h4 {
 
 }
 
-.connect h4 {
-  margin-bottom: 30px;
-}
-
-.bg-other {
-    background-color: #f0f0ee;
-}
-
-
-img {
-  margin-bottom: 10px;
-}
-
+/*adds padding for sections*/
 .section {
     padding: 60px 50px;
 }
 
-#connect {
-  color:#E8E9F3;
-  background-color: #334E58;
-  padding: 20px;
+/*alternating background color for sections*/
+.bg-other {
+    background-color: #f0f0ee;
 }
 
-#connect h2 {
-  color: #E8E9F3;
+/*adds bottom margin to images*/
+img {
+  margin-bottom: 10px;
 }
 
-#connect a {
-  color: #E8E9F3;
-  text-decoration:none;
-}
-
-/* Color icons*/
+/* Color of icons*/
 i {
     color: #373733;
 }
 
+/*styles for tooltips*/
 .tooltip > .tooltip-inner {
      background-color: #373733;
      color: #E8E9F3;
  }
 
+/*styles cursor as pointer*/
 .pointer {cursor: pointer;}
-
-#connect i {
-    color: #E8E9F3;
-}
-
-.footer {
-    padding: 10px 10px
-}
 
 /*card flip adapted from https://davidwalsh.name/css-flip*/
 /* entire container, keeps perspective */
 .flip-container {
 	perspective: 1000px;
-
 }
-/* flip the pane when hovered
-.flip-container:hover .flipper, .flip-container.hover .flipper {
-		transform: rotateY(180deg);
-}
-*/
 
+/*class applied by script to flip the card*/
 .flip {
   transform: rotateY(180deg);
 }
 
+/*sets size of card*/
 .flip-container, .front, .back {
 	height: 430px;
   margin: 20px auto;
   width: 100%;
   max-width:480px;
 
-}
-
-.flip-container, .front, .back {
 }
 
 /* flip speed goes here */
@@ -162,25 +161,6 @@ i {
   overflow: auto;
 }
 
-.front a{
-  color:#373733;
-  text-decoration:none;
-}
-
-.no-gutters {
-  margin-right: 0;
-  margin-left: 0;
-  padding-right: 0;
-  padding-left: 0;
-
-  > .col,
-  > [class*="col-"] {
-    padding-right: 0;
-    padding-left: 0;
-  }
-}
-
-
 /* front pane, placed above back */
 .front {
   z-index: 2;
@@ -194,25 +174,27 @@ i {
 
 }
 
+/*sets size of card's main content*/
 .portfolio-content {
   width: 100%;
-
   padding: 0px;
   overflow-y: auto;
 }
 
+/*sets height of image on front of card*/
 .front .portfolio-content {
   height: 315px;
 }
 
+/*sets height of main content on back of card*/
 .back .portfolio-content {
   height: 370px;
 }
 
+/*sets background image for each card by id*/
 #cayuga {
      background: url(images/cayuga-flowers.jpg);
     background-size: cover;
-
 }
 
 #portal {
@@ -222,4 +204,27 @@ i {
 
 #flagging {
   background: url(images/flagging.jpg);
+}
+
+/*Styles for footer*/
+footer {
+  color:#E8E9F3;
+  background-color: #334E58;
+  padding: 20px;
+  padding: 10px 10px
+}
+
+footer h2 {
+  color: #E8E9F3;
+}
+
+/*links*/
+footer a {
+  color: #E8E9F3;
+  text-decoration:none;
+}
+
+/*icons*/
+footer i {
+    color: #E8E9F3;
 }
