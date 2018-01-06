@@ -196,7 +196,7 @@ i {
 
 /*sets height of main content on back of card*/
 .back .portfolio-content {
-  height: 370px;
+  height: 360px;
 }
 
 /*sets background image for each card by id*/
