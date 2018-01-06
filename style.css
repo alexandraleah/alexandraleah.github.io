@@ -155,7 +155,9 @@ i {
 .front, .back {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-	position: absolute;
+  transition: 0.6s;
+  tansform-style: preserve-3d;
+  position: absolute;
 	top: 0;
 	left: 0;
   background-color: #ffffff;
