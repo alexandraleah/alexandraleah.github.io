@@ -130,6 +130,8 @@ i {
 
 /*class applied by script to flip the card*/
 .flip {
+  -webkit-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
 
@@ -151,7 +153,8 @@ i {
 
 /* hide back of pane during swap */
 .front, .back {
-	backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -165,13 +168,16 @@ i {
 .front {
   z-index: 2;
 	/* for firefox 31 */
-	transform: rotateY(0deg);
+	-webkit-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  transform: rotateY(0deg);
 }
 
 /* back, initially hidden pane */
 .back {
-	transform: rotateY(180deg);
-
+	-webkit-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 /*sets size of card's main content*/
