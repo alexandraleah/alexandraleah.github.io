@@ -214,6 +214,13 @@ i {
   background: url(images/flagging.jpg);
 }
 
+#crwa {
+  background: url(images/crwa-web.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
+
+}
+
 /*Styles for footer*/
 footer {
   color:#E8E9F3;
