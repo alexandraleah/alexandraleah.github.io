@@ -217,7 +217,13 @@ i {
 #crwa {
   background: url(images/crwa-web.png);
   background-repeat: no-repeat;
-  background-position-x: center;
+  background-position-x: left;
+}
+
+#salesforce {
+  background: url(images/salesforce.png);
+  background-repeat: no-repeat;
+  background-position-x: left;
 
 }
 
