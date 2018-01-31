@@ -255,11 +255,24 @@ footer a:hover {
   color: #E8E9F3;
   text-decoration: underline;
 }
-
-
-
-
 /*icons*/
 footer i {
     color: #E8E9F3;
+}
+
+.typewriter {
+
+    height: 2em;
+    animation-name: writer;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+    width: 40%;
+}
+
+@keyframes writer {
+  from {width:0%;}
+  to {width:40%;}
 }
