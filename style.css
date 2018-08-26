@@ -210,6 +210,11 @@ i {
   background-size: cover;
 }
 
+#treasure {
+  background: url(images/treasure.png);
+  background-size: cover;
+}
+
 #ramen {
   background: url(images/ramen.jpg);
   background-size: cover;
