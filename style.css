@@ -261,18 +261,14 @@ footer i {
 }
 
 .typewriter {
-
     height: 2em;
-    animation-name: writer;
-    animation-duration: 5s;
-    animation-timing-function: linear;
-    overflow: hidden;
     position: relative;
-    margin: auto;
-    width: 40%;
+
+    width: 2%;
+    overflow: hidden;
+    transition: width 5s ease;
 }
 
-@keyframes writer {
-  from {width:0%;}
-  to {width:40%;}
+.typewriter:hover {
+  width:40%;
 }
