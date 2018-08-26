@@ -1,2 +1,3 @@
 # alexandraleah.github.io
-A portfolio showcasing my work using bootstrap and adapted from w3schools bootstrap theme. 
+
+A portfolio showcasing my work. Adapted from a W3School Bootstrap theme.
